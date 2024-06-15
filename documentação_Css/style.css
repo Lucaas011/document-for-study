@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Define margens e preenchimentos (padding) de todos os elementos como 0, garantindo que não haja espaços indesejados. */
+}
+
+/* Define a cor de fundo da página e uma imagem de fundo */
+body {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    background-image: url('https://www.exemplo.com/imagem.jpg'); /* URL da imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem de fundo durante o scroll */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a área */
+}
+
+/* Define a fonte, cor e alinhamento do texto para o elemento h1 */
+h1 {
+    font-family: Arial, sans-serif; /* Fonte Arial */
+    color: #333; /* Cor do texto cinza escuro */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Define a margem, preenchimento e borda de um parágrafo */
+p {
+    margin: 20px; /* Margem de 20 pixels ao redor do parágrafo */
+    padding: 10px; /* Preenchimento de 10 pixels dentro do parágrafo */
+    border: 1px solid #ccc; /* Borda sólida de 1 pixel com cor cinza claro */
+}
+
+/* Define a largura, altura e cor de fundo de uma div */
+div.container {
+    width: 80%; /* Largura de 80% do elemento pai */
+    height: 200px; /* Altura de 200 pixels */
+    background-color: #fff; /* Cor de fundo branca */
+}
+
+/* Define o estilo para links */
+a {
+    color: #0066cc; /* Cor azul para o link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao link quando o mouse passa por cima */
+}
+
+/* Define um layout flexível para um contêiner */
+.flex-container {
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Define o estilo para um botão */
+button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 15px 32px; /* Preenchimento de 15 pixels no topo e embaixo e 32 pixels nas laterais */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 16px; /* Tamanho da fonte de 16 pixels */
+    margin: 4px 2px; /* Margem de 4 pixels no topo e embaixo e 2 pixels nas laterais */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse sobre o botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo verde mais escura ao passar o mouse */
+}
+
+/* Define a responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    body {
+        background-color: #e0e0e0; /* Altera a cor de fundo para cinza médio em telas menores */
+    }
+    
+    h1 {
+        font-size: 18px; /* Reduz o tamanho da fonte do h1 */
+    }
+    
+    div.container {
+        width: 100%; /* Define a largura da div para 100% do elemento pai */
+        height: auto; /* Altura automática */
+    }
+}
+
+/* Define o estilo para listas não ordenadas */
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Define o estilo para itens de lista */
+li {
+    padding: 8px; /* Preenchimento de 8 pixels ao redor de cada item */
+    margin-bottom: 4px; /* Margem inferior de 4 pixels entre os itens */
+    background-color: #f9f9f9; /* Cor de fundo cinza claro */
+}
+
+/* Define o estilo para tabelas */
+table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Remove os espaços entre as células da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda de 1 pixel com cor cinza claro para células */
+    padding: 8px; /* Preenchimento de 8 pixels dentro das células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo cinza claro para cabeçalhos */
+    color: black; /* Cor do texto preta para cabeçalhos */
+}
+
+/* Define o estilo para imagens */
+img {
+    max-width: 100%; /* Limita a largura máxima da imagem a 100% do elemento pai */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    display: block; /* Remove os espaços em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Define o estilo para campos de entrada */
+input[type="text"] {
+    width: 100%; /* Largura total do campo de entrada */
+    padding: 12px 20px; /* Preenchimento interno de 12 pixels no topo e embaixo e 20 pixels nas laterais */
+    margin: 8px 0; /* Margem de 8 pixels no topo e embaixo */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do campo */
+    border: 1px solid #ccc; /* Borda de 1 pixel com cor cinza claro */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Define o estilo para campos de seleção */
+select {
+    width: 100%; /* Largura total do campo de seleção */
+    padding: 12px 20px; /* Preenchimento interno de 12 pixels no topo e embaixo e 20 pixels nas laterais */
+    margin: 8px 0; /* Margem de 8 pixels no topo e embaixo */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do campo */
+    border: 1px solid #ccc; /* Borda de 1 pixel com cor cinza claro */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Define o estilo para formulários */
+form {
+    max-width: 600px; /* Largura máxima de 600 pixels para o formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px; /* Preenchimento interno de 20 pixels */
+    background-color: #ffffff; /* Cor de fundo branca */
+    border: 1px solid #ccc; /* Borda de 1 pixel com cor cinza claro */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Define o estilo para cabeçalhos dentro de um contêiner */
+.container h2 {
+    font-size: 24px; /* Tamanho da fonte de 24 pixels */
+    color: #333; /* Cor do texto cinza escuro */
+    margin-bottom: 10px; /* Margem inferior de 10 pixels */
+}
+
+/* Define o estilo para parágrafos dentro de um contêiner */
+.container p {
+    font-size: 16px; /* Tamanho da fonte de 16 pixels */
+    color: #666; /* Cor do texto cinza médio */
+    line-height: 1.5; /* Altura da linha de 1.5 para melhor legibilidade */
+}

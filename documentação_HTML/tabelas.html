@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <main>
+        <h1>Tabelas do html</h1>
+
+        <section id="students">
+            <h2>Tabela de alunos</h2>
+
+
+            <table border="2">
+                <!--Thead define o cabeçalho da tabela-->
+                <thead>
+                    <!--Cria uma linha na tabela-->
+                    <tr>
+                        <!--TH Define a primeira célula da tabela-->
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <!--Corpo da tabela-->
+                <tbody>
+                    <tr>
+                        <!--Dentro do corpo da tabela usa TD ja nas células usa TH-->
+                        <td>Maria</td>
+                        <td>Maria.Eduarda@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucas</td>
+                        <td>Lucas.Martins@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Manu</td>
+                        <td>Manu.Martins@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de controle financeiro</h2>
+
+            <table border="2">
+                <thead>
+                <tr>
+                    <th>data</th>
+                    <th>tipo</th>
+                    <th>descrição</th>
+                    <th>valor transação</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!--rowspan serve para mesclar as linhas-->
+                        <td rowspan="2">15/06/2022</td>
+                        <!--colspan mesclagem de coluna-->
+                        <td colspan="2">Despesa</td>
+                        <!--<td>Almoço</td>-->
+                        <td>R$35,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>receita</td>
+                        <td>salario</td>
+                        <td>R$3700,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

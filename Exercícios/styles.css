@@ -1,0 +1,46 @@
+body{
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.boxnav {
+    background-color: gold;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.questions {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    padding: 6px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 50%;
+}
+
+button {
+    background-color: slateblue;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 50%
+}
+button{
+    background-color: cornflowerblue;
+}
