@@ -1,0 +1,86 @@
+/* Seleciona todos os elementos de um determinado tipo (tag HTML) */
+p { color: blue; } /* Isso irá alterar a cor de todos os parágrafos (<p>) para azul. */
+
+/* Seletor de Classe: Seleciona todos os elementos com uma determinada classe */
+.button { background-color: green; } /* Isso irá aplicar o fundo verde a todos os elementos com a classe 'button'. */
+
+/* Seletor de ID: Seleciona um único elemento com um ID específico */
+#header { background-color: yellow; } /* Este código aplicará um fundo amarelo ao elemento com o ID 'header'. */
+
+/* Seletores Combinadores: Seleciona elementos baseados em sua relação com outros elementos */
+
+/* Seletor Descendente: Altera a cor de todos os <p> dentro de <div> */
+div p { color: red; }
+
+/* Seletor Filho Direto: Afeta apenas os <p> que são filhos diretos de <div> */
+div > p { color: green; }
+
+/* Seletor de Irmão Adjacente: Estiliza o <p> que segue imediatamente após um <h1> */
+h1 + p { font-weight: bold; }
+
+/* Seletores de Atributo: Seleciona elementos com base no valor de seus atributos */
+
+/* Estiliza todos os campos de entrada de texto */
+input[type="text"] { border: 1px solid black; }
+
+/* Altera a cor de todos os links que contêm 'example.com' no atributo href */
+a[href*="example.com"] { color: orange; }
+
+/* Seletores Pseudo-classes: Aplicam estilos com base em estados dinâmicos ou estruturas */
+
+/* Altera a cor dos links quando o mouse está sobre eles */
+a:hover { color: red; }
+
+/* Aplica um fundo cinza claro a todos os elementos ímpares da lista */
+li:nth-child(odd) { background-color: lightgray; }
+
+/* Seletores Pseudo-elementos: Permitem estilizar partes específicas de um elemento */
+
+/* Altera o estilo da primeira letra de cada parágrafo */
+p::first-letter { font-size: 2em; color: blue; }
+
+/* Insere texto ou outros conteúdos após o elemento <div> */
+div::after { content: " - Fim"; }
+
+/* Seletores Universais e Agrupamento de Seletores */
+
+/* Seletor Universal: Aplica estilos a todos os elementos */
+* { margin: 0; padding: 0; }
+
+/* Agrupamento: Permite aplicar os mesmos estilos a vários seletores */
+h1, h2, h3 { color: green; }
+
+/* Seletor de Irmãos Gerais: Seleciona todos os irmãos de um elemento */
+h2 p { color: gray; } /* Aplica cor cinza a todos os parágrafos que são irmãos de um <h2>. */
+
+/* Oculta todas as <section> que não possuem a classe 'active' */
+section:not(.active) { display: none; }
+
+/* Modelo de Caixa CSS (Box Model) */
+
+/* O Box Model consiste nos seguintes componentes: */
+/* - Margem (Margin): Espaço fora da borda */
+/* - Borda (Border): Delimita o elemento */
+/* - Preenchimento (Padding): Espaço entre a borda e o conteúdo */
+/* - Conteúdo (Content): O conteúdo real do elemento */
+div { margin: 10px; padding: 20px; border: 1px solid black; }
+
+/* O Box Model permite calcular a largura total de um elemento */
+div.caixa {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+/* Box-Sizing: Define como a largura e altura totais de um elemento são calculadas */
+.caixa { box-sizing: border-box; } /* Inclui o padding e a borda na largura e altura. */
+
+/* Padding: Controla o espaço interno entre o conteúdo e a borda do elemento */
+.caixa { padding: 20px 10px 30px 5px; }
+
+/* Border: Define a borda ao redor do conteúdo e do padding */
+.caixa { border: 5px dashed red; } /* Borda vermelha tracejada de 5px em todos os lados */
+
+/* Margin: Controla o espaço externo ao redor do elemento */
+.caixa { margin: 20px auto; } /* Centraliza o elemento horizontalmente */
